@@ -17,9 +17,9 @@ class bigint
         ~bigint();
 
         bigint operator+(const bigint& other) const;
-        bigint& operator+=(const bigint& other);
-        bigint& operator++();
         bigint operator++(int);
+        bigint& operator++();
+        bigint& operator+=(const bigint& other);
 
         bigint operator<<(unsigned int shift) const;
         bigint operator>>(const bigint& shift) const;
